@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_8dp"
+    app:cardBackgroundColor="@color/item_search_background"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="@dimen/card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSearchTitle"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_24dp"
+            android:ellipsize="end"
+            android:textColor="@color/item_title"
+            android:textSize="@dimen/text_size_title_24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tvSearchDescription"
+            app:layout_constraintEnd_toEndOf="@+id/tvSearchDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSearchDescription"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_24dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/item_text"
+            android:textSize="@dimen/text_size_title_16sp"
+            app:layout_constraintBottom_toTopOf="@id/ivSearchFork"
+            app:layout_constraintEnd_toStartOf="@+id/clSearchUser"
+            app:layout_constraintStart_toStartOf="@id/tvSearchTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvSearchTitle"
+            tools:text="@string/lorem" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSearchUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:minWidth="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvSearchDescription"
+            app:layout_constraintTop_toTopOf="@+id/tvSearchTitle">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSearchUserImage"
+                android:layout_width="@dimen/profile_photo"
+                android:layout_height="@dimen/profile_photo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_launcher_background" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSearchUserName"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:textAlignment="center"
+                android:textColor="@color/item_title_user"
+                app:layout_constraintBottom_toTopOf="@id/tvSearchFullName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivSearchUserImage"
+                tools:text="Username" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSearchFullName"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:textAlignment="center"
+                android:textColor="@color/item_name_user"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSearchUserName"
+                tools:text="FullName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSearchFork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvSearchDescription"
+            app:layout_constraintTop_toBottomOf="@id/tvSearchDescription"
+            app:srcCompat="@drawable/ic_fork_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSearchFork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:textColor="@color/item_counter"
+            app:layout_constraintBottom_toBottomOf="@id/ivSearchFork"
+            app:layout_constraintStart_toEndOf="@id/ivSearchFork"
+            app:layout_constraintTop_toTopOf="@id/ivSearchFork"
+            tools:text="5435244525" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSearchStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_48dp"
+            app:layout_constraintStart_toEndOf="@id/tvSearchFork"
+            app:layout_constraintTop_toTopOf="@id/ivSearchFork"
+            app:srcCompat="@drawable/ic_star_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSearchStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:textColor="@color/item_counter"
+            app:layout_constraintBottom_toBottomOf="@id/ivSearchFork"
+            app:layout_constraintStart_toEndOf="@id/ivSearchStar"
+            app:layout_constraintTop_toTopOf="@id/ivSearchFork"
+            tools:text="98" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

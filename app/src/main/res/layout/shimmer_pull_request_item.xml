@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_8dp"
+        app:cardBackgroundColor="@color/item_search_background"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="@dimen/card_elevation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvShimmerPullRequestTitle"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:ellipsize="end"
+                android:background="@color/shimmer"
+                android:textColor="@color/item_title"
+                android:textSize="@dimen/text_size_title_24sp"
+                app:layout_constraintBottom_toTopOf="@id/tvShimmerPullRequestDescription"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvShimmerPullRequestDescription"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:ellipsize="end"
+                android:background="@color/shimmer"
+                android:maxLines="2"
+                android:lines="2"
+                android:textColor="@color/item_text"
+                android:textSize="@dimen/text_size_title_16sp"
+                app:layout_constraintEnd_toEndOf="@id/tvShimmerPullRequestTitle"
+                app:layout_constraintStart_toStartOf="@id/tvShimmerPullRequestTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvShimmerPullRequestTitle" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivShimmerPullRequestUser"
+                android:layout_width="@dimen/profile_photo"
+                android:layout_height="@dimen/profile_photo"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginBottom="@dimen/margin_24dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tvShimmerPullRequestDescription"
+                app:layout_constraintTop_toBottomOf="@id/tvShimmerPullRequestDescription"
+                tools:src="@drawable/background_shimmer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvShimmerPullRequestUserName"
+                android:layout_width="@dimen/shimmer_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:background="@color/shimmer"
+                android:textAlignment="center"
+                android:textColor="@color/item_title_user"
+                app:layout_constraintBottom_toTopOf="@id/tvSearchFullName"
+                app:layout_constraintStart_toEndOf="@id/ivShimmerPullRequestUser"
+                app:layout_constraintTop_toTopOf="@id/ivShimmerPullRequestUser" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSearchFullName"
+                android:layout_width="@dimen/shimmer_text_width"
+                android:background="@color/shimmer"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:textAlignment="center"
+                android:textColor="@color/item_name_user"
+                app:layout_constraintBottom_toBottomOf="@+id/ivShimmerPullRequestUser"
+                app:layout_constraintStart_toEndOf="@id/ivShimmerPullRequestUser"
+                app:layout_constraintTop_toBottomOf="@id/tvShimmerPullRequestUserName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</com.facebook.shimmer.ShimmerFrameLayout>

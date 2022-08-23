@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_8dp"
+    app:cardBackgroundColor="@color/item_search_background"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="@dimen/card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPullRequestTitle"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_24dp"
+            android:ellipsize="end"
+            android:textColor="@color/item_title"
+            android:textSize="@dimen/text_size_title_24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tvPullRequestDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPullRequestDescription"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/item_text"
+            android:textSize="@dimen/text_size_title_16sp"
+            app:layout_constraintEnd_toEndOf="@id/tvPullRequestTitle"
+            app:layout_constraintStart_toStartOf="@id/tvPullRequestTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvPullRequestTitle"
+            tools:text="@string/lorem" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPullRequestUser"
+            android:layout_width="@dimen/profile_photo"
+            android:layout_height="@dimen/profile_photo"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_24dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvPullRequestDescription"
+            app:layout_constraintTop_toBottomOf="@id/tvPullRequestDescription"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPullRequestUserName"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:textAlignment="center"
+            android:textColor="@color/item_title_user"
+            app:layout_constraintBottom_toTopOf="@id/tvSearchFullName"
+            app:layout_constraintStart_toEndOf="@id/ivPullRequestUser"
+            app:layout_constraintTop_toTopOf="@id/ivPullRequestUser"
+            tools:text="Username" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSearchFullName"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:textAlignment="center"
+            android:textColor="@color/item_name_user"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPullRequestUser"
+            app:layout_constraintStart_toEndOf="@id/ivPullRequestUser"
+            app:layout_constraintTop_toBottomOf="@id/tvPullRequestUserName"
+            tools:text="FullName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
