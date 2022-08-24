@@ -5,17 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvPullRequestResume"
-        android:layout_width="@dimen/zero_dp"
-        android:padding="@dimen/padding_24dp"
-        android:textSize="@dimen/text_size_title_24sp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="16 opened / 800 closed" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewPullRequestList"
         android:layout_width="match_parent"
@@ -24,7 +13,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvPullRequestResume"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck"
         tools:itemCount="5"
         tools:listitem="@layout/item_pull_request" />

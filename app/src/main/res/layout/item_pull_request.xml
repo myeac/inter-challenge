@@ -63,18 +63,19 @@
             android:layout_marginStart="@dimen/margin_16dp"
             android:textAlignment="center"
             android:textColor="@color/item_title_user"
-            app:layout_constraintBottom_toTopOf="@id/tvSearchFullName"
+            app:layout_constraintBottom_toTopOf="@id/tvPullRequestData"
             app:layout_constraintStart_toEndOf="@id/ivPullRequestUser"
             app:layout_constraintTop_toTopOf="@id/ivPullRequestUser"
             tools:text="Username" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tvSearchFullName"
+            android:id="@+id/tvPullRequestData"
             android:layout_width="@dimen/zero_dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_16dp"
             android:textAlignment="center"
             android:textColor="@color/item_name_user"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/ivPullRequestUser"
             app:layout_constraintStart_toEndOf="@id/ivPullRequestUser"
             app:layout_constraintTop_toBottomOf="@id/tvPullRequestUserName"

@@ -1,7 +1,10 @@
 <resources>
-    <string name="app_name">inter-challenge</string>
+    <string name="app_name">RetoInter - Miguel Yengle</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo erat, facilisis eget nunc sed, iaculis tempus justo. In vulputate mollis arcu, a tempus risus blandit non. Nam at dolor commodo, congue ipsum in, euismod elit. Nullam eu pulvinar nisl. Maecenas ac porta neque, varius vehicula lorem. Aliquam ultrices nibh a accumsan vulputate. Proin sit amet nibh mollis, interdum lacus vitae, aliquam velit. Maecenas augue ex, feugiat quis dolor at, tincidunt vestibulum arcu. Sed egestas sit amet nisi id fringilla. Cras vitae tristique eros, non tempor est. Donec sollicitudin mattis diam sit amet pellentesque.</string>
+
+    <string name="navigation_title_search_list">Github search list</string>
+    <string name="navigation_pull_request">Github pull request</string>
 
 </resources>
