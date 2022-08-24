@@ -29,6 +29,5 @@ As seguintes funcionalidades estão disponiveis na branch **development**
 - Eventos de visualizar o detalhe das listas
   -- desde a tela de busca, para a tela de PR
   -- desde a tela de PR, para o link do PR (navegador)
--
 
 > Obrigado pela consideração!  o/
