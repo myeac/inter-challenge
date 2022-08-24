@@ -3,17 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/pullRequestListFragment">
+    app:startDestination="@id/searchListFragment">
+
+    <fragment
+        android:id="@+id/searchListFragment"
+        android:name="com.example.inter_challenge.ui.fragments.SearchListFragment"
+        android:label="@string/navigation_title_search_list"
+        tools:layout="@layout/fragment_search_list">
+        <action
+            android:id="@+id/action_searchListFragment_to_pullRequestListFragment"
+            app:destination="@id/pullRequestListFragment"
+            app:enterAnim="@anim/nav_slide_enter_anim"
+            app:exitAnim="@anim/nav_slide_exit_anim"
+            app:popEnterAnim="@anim/nav_slide_pop_enter_anim"
+            app:popExitAnim="@anim/nav_slide_pop_exit_anim" />
+    </fragment>
 
     <fragment
         android:id="@+id/pullRequestListFragment"
-        tools:layout="@layout/item_pull_request"
         android:name="com.example.inter_challenge.ui.fragments.PullRequestListFragment"
-        android:label="PullRequestListFragment" />
-    
-    <fragment
-        android:id="@+id/searchListFragment"
-        tools:layout="@layout/fragment_search_list"
-        android:name="com.example.inter_challenge.ui.fragments.SearchListFragment"
-        android:label="SearchListFragment" />
+        android:label="@string/navigation_pull_request"
+        tools:layout="@layout/fragment_pull_request_list" />
+
 </navigation>
