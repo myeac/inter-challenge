@@ -10,7 +10,7 @@ import com.example.inter_challenge.R
 import com.example.inter_challenge.data.mappers.toPresentation
 import com.example.inter_challenge.data.mappers.toUI
 import com.example.inter_challenge.data.remote.models.RepositorySearchResponseModel
-import com.example.inter_challenge.utilities.BaseFragment
+import com.example.inter_challenge.utilities.base.BaseFragment
 import com.example.inter_challenge.databinding.FragmentSearchListBinding
 import com.example.inter_challenge.ui.adapters.SearchAdapter
 

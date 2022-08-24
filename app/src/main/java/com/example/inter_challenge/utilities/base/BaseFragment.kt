@@ -1,4 +1,4 @@
-package com.example.inter_challenge.utilities
+package com.example.inter_challenge.utilities.base
 
 import android.os.Bundle
 import android.view.View

@@ -4,12 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.inter_challenge.data.mappers.toPresentation
 import com.example.inter_challenge.data.mappers.toUI
 import com.example.inter_challenge.data.remote.models.PullRequestResponseModel
-import com.example.inter_challenge.utilities.BaseFragment
+import com.example.inter_challenge.utilities.base.BaseFragment
 import com.example.inter_challenge.databinding.FragmentPullRequestListBinding
 import com.example.inter_challenge.ui.adapters.PullRequestAdapter
 import com.example.inter_challenge.utilities.openUrl

@@ -4,8 +4,8 @@ import com.example.inter_challenge.data.remote.models.PullRequestResponseModel
 import com.example.inter_challenge.ui.model.PullRequestUIModel
 import com.example.inter_challenge.utilities.Constants.DATE_HOUR
 import com.example.inter_challenge.utilities.Constants.DATE_HOUR_BR
-import com.example.inter_challenge.utilities.format
-import com.example.inter_challenge.utilities.toDate
+import com.example.inter_challenge.utilities.extensions.format
+import com.example.inter_challenge.utilities.extensions.toDate
 import com.example.inter_challenge.viewmodel.models.PullRequestPresentationModel
 
 fun PullRequestResponseModel.toPresentation() = PullRequestPresentationModel(

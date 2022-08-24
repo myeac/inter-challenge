@@ -1,4 +1,4 @@
-package com.example.inter_challenge.utilities
+package com.example.inter_challenge.utilities.extensions
 
 import com.example.inter_challenge.utilities.Constants.DATE_BR
 import java.text.SimpleDateFormat

@@ -6,8 +6,8 @@ import com.bumptech.glide.Glide
 import com.example.inter_challenge.R
 import com.example.inter_challenge.databinding.ItemPullRequestBinding
 import com.example.inter_challenge.ui.model.PullRequestUIModel
-import com.example.inter_challenge.utilities.BaseAdapter
-import com.example.inter_challenge.utilities.BaseViewHolder
+import com.example.inter_challenge.utilities.base.BaseAdapter
+import com.example.inter_challenge.utilities.base.BaseViewHolder
 
 class PullRequestAdapter(
     val pullRequestClickListener: (item: PullRequestUIModel) -> Unit

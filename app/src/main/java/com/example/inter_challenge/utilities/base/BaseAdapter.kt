@@ -1,4 +1,4 @@
-package com.example.inter_challenge.utilities
+package com.example.inter_challenge.utilities.base
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
